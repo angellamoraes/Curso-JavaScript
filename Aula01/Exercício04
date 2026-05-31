@@ -6,8 +6,8 @@ let estoqueAtual = Number(prompt("Qual a quantidade atual no estoque?"));
 let remover = Number(prompt("Qual a quantidade que deseja remover do estoque?"));
 let estoque = estoqueAtual - remover
 
-if (estoque >= 1 ) {
+if (estoque >= 0 ) {
     alert(`Estoque atualizado: ${estoque}`);
 } else {
-    alert(`Operação inválida`);
+    alert(`Operação inválida: quantidade insuficiente no estoque`);
 }
